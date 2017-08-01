@@ -19,4 +19,6 @@ public class Photographer{
     this.cameras.remove(0);
   }
 
+  
+
 }

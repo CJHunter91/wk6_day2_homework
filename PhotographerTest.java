@@ -3,11 +3,15 @@ import org.junit.*;
 
 public class PhotographerTest{
 
-Photographer photographer;
+private Photographer photographer;
+private DigitalCamera dcamera;
+private AnalogCamera acamera;
 
   @Before
   public void before(){
     photographer = new Photographer();
+    dcamera = new DigitalCamera("Nikon 34T", "Noise reduction filter","Hi-resolution");
+    acamera = new AnalogCamera("Sony ILCE5100L", "No noise reduction", "Lo-resolution");
   }
 
   @Test
@@ -24,5 +28,9 @@ Photographer photographer;
     photographer.addCamera("Camera");
     photographer.removeCamera();
     assertEquals(0, photographer.countCameras());
+  }
+  @Test
+  public void testCanPrintAllCameras(){
+
   }
 }
