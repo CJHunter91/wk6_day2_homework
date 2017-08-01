@@ -9,4 +9,8 @@ public class AnalogCamera implements Printable{
     this.noise = noise;
     this.resolution = resolution;
   }
+
+  public String printDetails(){
+    return this.model + ", " + this.noise + ", " + this.resolution;
+  }
 }
