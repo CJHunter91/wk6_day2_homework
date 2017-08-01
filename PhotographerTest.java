@@ -46,8 +46,8 @@ private AnalogCamera acamera;
     photographer.addJournal("Monday", 2);
     assertEquals(1, photographer.countJournal());
   }
-  // @Test 
-  // public void testReturnAllPhotos(){
-  //   assertEquals(4, photographer.numberOfPhotos());
-  // }
+  @Test 
+  public void testReturnAllPhotos(){
+    assertEquals(4, photographer.numberOfPhotos());
+  }
 }
