@@ -19,6 +19,11 @@ public class Photographer{
     this.cameras.remove(0);
   }
 
+  public String printAllCameras(){
+    String allCameras;
+
+  }
+
 
 
 }

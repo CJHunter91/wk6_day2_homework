@@ -29,7 +29,10 @@ private AnalogCamera acamera;
     photographer.removeCamera();
     assertEquals(0, photographer.countCameras());
   }
-  // @Test
-  // public void testCanPrintAllCameras(){
-  // }
+  @Test
+  public void testCanPrintAllCameras(){
+    photographer.addCamera(dcamera);
+    photographer.addCamera(acamera);
+    assertEquals("", photographer.printAllCameras());
+  }
 }
