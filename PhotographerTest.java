@@ -13,9 +13,9 @@ Photographer photographer;
   public void testCanCountCameras(){
     assertEquals(0, photographer.countCameras());
   }
-  // @Test
-  // public void testCanAddCamera(){
-  //   photographer.add("Camera");
-  //   assertEquals(1, photographer.countCameras);
-  // }
+  @Test
+  public void testCanAddCamera(){
+    photographer.add("Camera");
+    assertEquals(1, photographer.countCameras);
+  }
 }
