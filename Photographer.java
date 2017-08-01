@@ -38,7 +38,14 @@ public class Photographer{
       count++;
     }
     return allCameras;
+  }
 
+  public Integer numberOfPhotos(){
+    Integer photoCount = 0;
+    for(Integer number: this.journal.values()){
+      photoCount = photoCount + number;
+    }
+    return photoCount;
   }
 
 
