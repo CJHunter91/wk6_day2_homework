@@ -36,4 +36,17 @@ private AnalogCamera acamera;
     String testString = "1. Nikon 34T, Noise reduction filter, Hi-resolution 2. Sony ILCE5100L, No noise reduction, Lo-resolution ";
     assertEquals(testString, photographer.printAllCameras());
   }
+    @Test
+    public void testCountJournal(){
+      assertEquals(0, photographer.countJournal());
+    }
+  // @Test
+  // public void testAddJournalLog(){
+  //   photographer.addJournal("Monday", 2)
+
+  // }
+  // @Test 
+  // public void testReturnAllPhotos(){
+  //   assertEquals(4, photographer.numberOfPhotos());
+  // }
 }

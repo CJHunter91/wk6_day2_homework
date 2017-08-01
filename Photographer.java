@@ -13,6 +13,10 @@ public class Photographer{
     return this.cameras.size();
   }
 
+  public int countJournal(){
+    return this.journal.size();
+  }
+
   public void addCamera(Printable camera){
     this.cameras.add(camera);
   }
