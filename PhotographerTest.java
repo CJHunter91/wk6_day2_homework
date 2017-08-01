@@ -19,6 +19,7 @@ Photographer photographer;
     photographer.addCamera("Camera");
     assertEquals(1, photographer.countCameras());
   }
+  @Test
   public void testCanRemoveCamera(){
     photographer.addCamera("Camera");
     photographer.removeCamera();
