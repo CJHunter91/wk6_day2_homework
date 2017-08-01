@@ -6,7 +6,7 @@ public class DigitalCameraTest{
 
   @Before
   public void before(){
-    dcamera = new DigitalCamera();
+    dcamera = new DigitalCamera("Nikon 34T", "Noise reduction filter","Hi-resolution");
   }
 
   @Test
