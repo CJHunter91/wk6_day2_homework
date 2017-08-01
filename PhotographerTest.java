@@ -33,6 +33,7 @@ private AnalogCamera acamera;
   public void testCanPrintAllCameras(){
     photographer.addCamera(dcamera);
     photographer.addCamera(acamera);
-    assertEquals("", photographer.printAllCameras());
+    String testString = "1. Nikon 34T, Noise reduction filter, Hi-resolution 2. Sony ILCE5100L, No noise reduction, Lo-resolution ";
+    assertEquals(testString, photographer.printAllCameras());
   }
 }

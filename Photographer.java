@@ -20,7 +20,14 @@ public class Photographer{
   }
 
   public String printAllCameras(){
-    String allCameras;
+    String allCameras = "";
+    Integer count = 1;
+    for(Printable camera: this.cameras){
+      String cameraDetails = camera.printDetails();
+      allCameras = allCameras + String.valueOf(count) + ". " + cameraDetails + " ";
+      count++;
+    }
+    return allCameras;
 
   }
 
