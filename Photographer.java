@@ -21,6 +21,10 @@ public class Photographer{
     this.cameras.add(camera);
   }
 
+  public void addJournal(String day, Integer photos){
+    this.journal.put(day, photos);
+  }
+
   public void removeCamera(){
     this.cameras.remove(0);
   }

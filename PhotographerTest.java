@@ -40,11 +40,11 @@ private AnalogCamera acamera;
     public void testCountJournal(){
       assertEquals(0, photographer.countJournal());
     }
-    
+
   @Test
   public void testAddJournalLog(){
-    photographer.addJournal("Monday", 2)
-
+    photographer.addJournal("Monday", 2);
+    assertEquals(1, photographer.countJournal());
   }
   // @Test 
   // public void testReturnAllPhotos(){
