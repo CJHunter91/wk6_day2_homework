@@ -20,17 +20,16 @@ private AnalogCamera acamera;
   }
   @Test
   public void testCanAddCamera(){
-    photographer.addCamera("Camera");
+    photographer.addCamera(dcamera);
     assertEquals(1, photographer.countCameras());
   }
   @Test
   public void testCanRemoveCamera(){
-    photographer.addCamera("Camera");
+    photographer.addCamera(acamera);
     photographer.removeCamera();
     assertEquals(0, photographer.countCameras());
   }
-  @Test
-  public void testCanPrintAllCameras(){
-
-  }
+  // @Test
+  // public void testCanPrintAllCameras(){
+  // }
 }
